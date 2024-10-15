@@ -4,12 +4,12 @@ import Jatekter from './component/Jatekter';
 
 function App() {
   
-  const [lista, setLista] = useState([" "," "," "," "," "," "," "," "," "])
+  const [lista, setLista] = useState([true,false,true,true,false,false,true,true,true])
   function katt(adat){
-    lista[adat]=true
+    //lista[adat]=true
     const slista = [...lista]
   
- if(slista[adat] ==true ){
+ if(slista[adat] == true ){
   slista[adat] = false 
  }else{
   slista[adat] = true 
