@@ -6,7 +6,6 @@ function App() {
   
   const [lista, setLista] = useState([true,false,true,true,false,false,true,true,true])
   function katt(adat){
-    //lista[adat]=true
     const slista = [...lista]
   
  if(slista[adat] == true ){
