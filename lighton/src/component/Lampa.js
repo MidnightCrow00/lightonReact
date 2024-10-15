@@ -6,6 +6,6 @@ export default function Lampa(props) {
     props.katt(props.index)
   }
     return (
-    <div className='lampa' onClick={()=>katt()}>{props.jel}</div>
+    <div className={`lampa ${props.jel?"fel":"le"}`} onClick={()=>katt()}>{props.jel}</div>
   )
 }

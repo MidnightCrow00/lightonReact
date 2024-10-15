@@ -5,19 +5,16 @@ import Jatekter from './component/Jatekter';
 function App() {
   
   const [lista, setLista] = useState([" "," "," "," "," "," "," "," "," "])
-  const [kapcs, setKapcs] = useState(0)
   function katt(adat){
-    lista[adat]="🟢"
+    lista[adat]=true
     const slista = [...lista]
   
- if(kapcs%2 ==0 ){
-    slista[adat]="🟢"
+ if(slista[adat] ==true ){
+  slista[adat] = false 
  }else{
-  slista[adat]="🔴"
+  slista[adat] = true 
  }
- let skapcs = kapcs
- skapcs++
- setKapcs(skapcs)
+
  setLista([...slista])
 
 }
